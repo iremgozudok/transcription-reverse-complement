@@ -1,5 +1,6 @@
 import collections
 Nucleotides = ["A", "T", "G", "C"]
+DNA_ReverseComplement = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}
 
 
 # DNA validation
@@ -21,3 +22,7 @@ def countNucFrequency(seq):
 
 def transcription(seq):
     return seq.replace("T", "U")
+
+
+def reverse_complement(seq):
+    return ''.join([DNA_ReverseComplement[nuc] for nuc in seq][::-1])
