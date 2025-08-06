@@ -17,3 +17,7 @@ def countNucFrequency(seq):
         tmpFreqDict[nuc] += 1
     return tmpFreqDict
     # return dict(collections.Counter(seq))
+
+
+def transcription(seq):
+    return seq.replace("T", "U")
